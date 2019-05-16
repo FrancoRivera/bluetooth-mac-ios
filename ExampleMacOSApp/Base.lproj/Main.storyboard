@@ -704,20 +704,20 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ExampleMacOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="BLEViewController" customModule="ExampleMacOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="725" height="487"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiD-84-Rs5">
-                                <rect key="frame" x="93" y="55" width="324" height="147"/>
+                                <rect key="frame" x="381" y="74" width="324" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" ambiguous="YES" id="wYd-wt-bHS">
-                                    <rect key="frame" x="1" y="0.0" width="322" height="146"/>
+                                    <rect key="frame" x="1" y="0.0" width="322" height="63"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="u5d-6B-vWz" viewBased="YES" id="1NP-QC-fla">
-                                            <rect key="frame" x="0.0" y="0.0" width="322" height="121"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="322" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -774,26 +774,26 @@
                                 </tableHeaderView>
                             </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vx5-Ek-hZh">
-                                <rect key="frame" x="157" y="250" width="184" height="32"/>
+                                <rect key="frame" x="424" y="142" width="184" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Search Devices" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vhC-QI-VuB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="searchDevicesAction:" target="XfG-lQ-9wD" id="AtY-wO-u5g"/>
+                                    <action selector="searchDevicesAction:" target="XfG-lQ-9wD" id="j46-G8-ydF"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="devicesTableView" destination="1NP-QC-fla" id="5gP-Ve-cKj"/>
-                        <outlet property="searchDevicesButton" destination="vx5-Ek-hZh" id="7wp-zc-ba4"/>
+                        <outlet property="devicesTableView" destination="1NP-QC-fla" id="LrI-IX-DNd"/>
+                        <outlet property="searchDevicesButton" destination="vx5-Ek-hZh" id="Rpy-WF-htf"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="684.5"/>
+            <point key="canvasLocation" x="197.5" y="763.5"/>
         </scene>
     </scenes>
 </document>

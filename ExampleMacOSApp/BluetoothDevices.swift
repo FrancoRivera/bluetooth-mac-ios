@@ -14,6 +14,9 @@ import IOBluetoothUI
 // See https://developer.apple.com/reference/iobluetooth/iobluetoothdevice
 // for API details.
 class BluetoothDevices: IOBluetoothDeviceInquiryDelegate {
+    @IBOutlet weak var devicesTableView: NSTableView!
+    @IBOutlet weak var searchDevicesButton: NSButton!
+    
     func pairedDevices() {
         print("Bluetooth devices:")
         guard let devices = IOBluetoothDevice.pairedDevices() else {

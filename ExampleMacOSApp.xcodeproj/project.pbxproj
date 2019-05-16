@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D6031B0228DABC1005DDFC7 /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6031AF228DABC1005DDFC7 /* BLEViewController.swift */; };
+		9D6037CD228CF52A0080E11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6037CC228CF52A0080E11E /* AppDelegate.swift */; };
+		9D6037CF228CF52A0080E11E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6037CE228CF52A0080E11E /* ViewController.swift */; };
+		9D6037D2228CF52A0080E11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6037D0228CF52A0080E11E /* Main.storyboard */; };
+		9D6037D5228CF52A0080E11E /* BluetoothPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */; };
+		9D6037D7228CF52C0080E11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6037D6228CF52C0080E11E /* Assets.xcassets */; };
+		9D6037DA228CF52C0080E11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6037D8228CF52C0080E11E /* LaunchScreen.storyboard */; };
 		9DAB9E4F228CA9FD00CE5489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */; };
 		9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E50228CA9FD00CE5489 /* ViewController.swift */; };
 		9DAB9E53228CA9FF00CE5489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB9E52228CA9FF00CE5489 /* Assets.xcassets */; };
@@ -15,6 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D6031AF228DABC1005DDFC7 /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		9D6037CA228CF52A0080E11E /* BluetoothPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6037CC228CF52A0080E11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D6037CE228CF52A0080E11E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D6037D1228CF52A0080E11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D6037D4228CF52A0080E11E /* BluetoothPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BluetoothPOC.xcdatamodel; sourceTree = "<group>"; };
+		9D6037D6228CF52C0080E11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D6037D9228CF52C0080E11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D6037DB228CF52C0080E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAB9E4B228CA9FD00CE5489 /* ExampleMacOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMacOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DAB9E50228CA9FD00CE5489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9D6037C7228CF52A0080E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DAB9E48228CA9FD00CE5489 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D6037CB228CF52A0080E11E /* BluetoothPOC */ = {
+			isa = PBXGroup;
+			children = (
+				9D6037CC228CF52A0080E11E /* AppDelegate.swift */,
+				9D6037CE228CF52A0080E11E /* ViewController.swift */,
+				9D6037D0228CF52A0080E11E /* Main.storyboard */,
+				9D6037D6228CF52C0080E11E /* Assets.xcassets */,
+				9D6037D8228CF52C0080E11E /* LaunchScreen.storyboard */,
+				9D6037DB228CF52C0080E11E /* Info.plist */,
+				9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */,
+			);
+			path = BluetoothPOC;
+			sourceTree = "<group>";
+		};
 		9DAB9E42228CA9FD00CE5489 = {
 			isa = PBXGroup;
 			children = (
 				9DAB9E4D228CA9FD00CE5489 /* ExampleMacOSApp */,
+				9D6037CB228CF52A0080E11E /* BluetoothPOC */,
 				9DAB9E4C228CA9FD00CE5489 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9DAB9E4B228CA9FD00CE5489 /* ExampleMacOSApp.app */,
+				9D6037CA228CF52A0080E11E /* BluetoothPOC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +101,7 @@
 				9DAB9E57228CA9FF00CE5489 /* Info.plist */,
 				9DAB9E58228CA9FF00CE5489 /* ExampleMacOSApp.entitlements */,
 				9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */,
+				9D6031AF228DABC1005DDFC7 /* BLEViewController.swift */,
 			);
 			path = ExampleMacOSApp;
 			sourceTree = "<group>";
@@ -69,6 +109,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9D6037C9228CF52A0080E11E /* BluetoothPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6037DC228CF52C0080E11E /* Build configuration list for PBXNativeTarget "BluetoothPOC" */;
+			buildPhases = (
+				9D6037C6228CF52A0080E11E /* Sources */,
+				9D6037C7228CF52A0080E11E /* Frameworks */,
+				9D6037C8228CF52A0080E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothPOC;
+			productName = BluetoothPOC;
+			productReference = 9D6037CA228CF52A0080E11E /* BluetoothPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9DAB9E4A228CA9FD00CE5489 /* ExampleMacOSApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DAB9E5B228CA9FF00CE5489 /* Build configuration list for PBXNativeTarget "ExampleMacOSApp" */;
@@ -96,6 +153,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = WeMake;
 				TargetAttributes = {
+					9D6037C9228CF52A0080E11E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					9DAB9E4A228CA9FD00CE5489 = {
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
@@ -120,11 +180,22 @@
 			projectRoot = "";
 			targets = (
 				9DAB9E4A228CA9FD00CE5489 /* ExampleMacOSApp */,
+				9D6037C9228CF52A0080E11E /* BluetoothPOC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9D6037C8228CF52A0080E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6037DA228CF52C0080E11E /* LaunchScreen.storyboard in Resources */,
+				9D6037D7228CF52C0080E11E /* Assets.xcassets in Resources */,
+				9D6037D2228CF52A0080E11E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DAB9E49228CA9FD00CE5489 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,10 +208,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9D6037C6228CF52A0080E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6037D5228CF52A0080E11E /* BluetoothPOC.xcdatamodeld in Sources */,
+				9D6037CF228CF52A0080E11E /* ViewController.swift in Sources */,
+				9D6037CD228CF52A0080E11E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DAB9E47228CA9FD00CE5489 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6031B0228DABC1005DDFC7 /* BLEViewController.swift in Sources */,
 				9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */,
 				9DAB9E4F228CA9FD00CE5489 /* AppDelegate.swift in Sources */,
 				9DAB9E5F228CB7C400CE5489 /* BluetoothDevices.swift in Sources */,
@@ -150,6 +232,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9D6037D0228CF52A0080E11E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D6037D1228CF52A0080E11E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D6037D8228CF52C0080E11E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D6037D9228CF52C0080E11E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		9DAB9E54228CA9FF00CE5489 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -161,6 +259,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9D6037DD228CF52C0080E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				INFOPLIST_FILE = BluetoothPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D6037DE228CF52C0080E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				INFOPLIST_FILE = BluetoothPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9DAB9E59228CA9FF00CE5489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,6 +458,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D6037DC228CF52C0080E11E /* Build configuration list for PBXNativeTarget "BluetoothPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6037DD228CF52C0080E11E /* Debug */,
+				9D6037DE228CF52C0080E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DAB9E46228CA9FD00CE5489 /* Build configuration list for PBXProject "ExampleMacOSApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -336,6 +486,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D6037D4228CF52A0080E11E /* BluetoothPOC.xcdatamodel */,
+			);
+			currentVersion = 9D6037D4228CF52A0080E11E /* BluetoothPOC.xcdatamodel */;
+			path = BluetoothPOC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DAB9E43228CA9FD00CE5489 /* Project object */;
 }
