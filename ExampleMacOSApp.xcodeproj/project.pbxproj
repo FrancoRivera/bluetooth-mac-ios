@@ -11,6 +11,7 @@
 		9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E50228CA9FD00CE5489 /* ViewController.swift */; };
 		9DAB9E53228CA9FF00CE5489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB9E52228CA9FF00CE5489 /* Assets.xcassets */; };
 		9DAB9E56228CA9FF00CE5489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB9E54228CA9FF00CE5489 /* Main.storyboard */; };
+		9DAB9E5F228CB7C400CE5489 /* BluetoothDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9DAB9E55228CA9FF00CE5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DAB9E57228CA9FF00CE5489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAB9E58228CA9FF00CE5489 /* ExampleMacOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExampleMacOSApp.entitlements; sourceTree = "<group>"; };
+		9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9DAB9E54228CA9FF00CE5489 /* Main.storyboard */,
 				9DAB9E57228CA9FF00CE5489 /* Info.plist */,
 				9DAB9E58228CA9FF00CE5489 /* ExampleMacOSApp.entitlements */,
+				9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */,
 			);
 			path = ExampleMacOSApp;
 			sourceTree = "<group>";
@@ -95,6 +98,11 @@
 				TargetAttributes = {
 					9DAB9E4A228CA9FD00CE5489 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +143,7 @@
 			files = (
 				9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */,
 				9DAB9E4F228CA9FD00CE5489 /* AppDelegate.swift in Sources */,
+				9DAB9E5F228CB7C400CE5489 /* BluetoothDevices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
