@@ -31,13 +31,13 @@
 		9D6037D6228CF52C0080E11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6037D9228CF52C0080E11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6037DB228CF52C0080E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DAB9E4B228CA9FD00CE5489 /* ExampleMacOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMacOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAB9E4B228CA9FD00CE5489 /* Bluetooth-Mac-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth-Mac-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DAB9E50228CA9FD00CE5489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DAB9E52228CA9FF00CE5489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DAB9E55228CA9FF00CE5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DAB9E57228CA9FF00CE5489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DAB9E58228CA9FF00CE5489 /* ExampleMacOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExampleMacOSApp.entitlements; sourceTree = "<group>"; };
+		9DAB9E58228CA9FF00CE5489 /* Bluetooth-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bluetooth-Mac.entitlements"; sourceTree = "<group>"; };
 		9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D6037CB228CF52A0080E11E /* BluetoothPOC */ = {
+		9D6037CB228CF52A0080E11E /* Bluetooth-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				9D6037CC228CF52A0080E11E /* AppDelegate.swift */,
@@ -70,14 +70,14 @@
 				9D6037DB228CF52C0080E11E /* Info.plist */,
 				9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */,
 			);
-			path = BluetoothPOC;
+			path = "Bluetooth-iOS";
 			sourceTree = "<group>";
 		};
 		9DAB9E42228CA9FD00CE5489 = {
 			isa = PBXGroup;
 			children = (
-				9DAB9E4D228CA9FD00CE5489 /* ExampleMacOSApp */,
-				9D6037CB228CF52A0080E11E /* BluetoothPOC */,
+				9DAB9E4D228CA9FD00CE5489 /* Bluetooth-Mac */,
+				9D6037CB228CF52A0080E11E /* Bluetooth-iOS */,
 				9DAB9E4C228CA9FD00CE5489 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,13 +85,13 @@
 		9DAB9E4C228CA9FD00CE5489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DAB9E4B228CA9FD00CE5489 /* ExampleMacOSApp.app */,
+				9DAB9E4B228CA9FD00CE5489 /* Bluetooth-Mac-iOS.app */,
 				9D6037CA228CF52A0080E11E /* BluetoothPOC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DAB9E4D228CA9FD00CE5489 /* ExampleMacOSApp */ = {
+		9DAB9E4D228CA9FD00CE5489 /* Bluetooth-Mac */ = {
 			isa = PBXGroup;
 			children = (
 				9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */,
@@ -99,11 +99,11 @@
 				9DAB9E52228CA9FF00CE5489 /* Assets.xcassets */,
 				9DAB9E54228CA9FF00CE5489 /* Main.storyboard */,
 				9DAB9E57228CA9FF00CE5489 /* Info.plist */,
-				9DAB9E58228CA9FF00CE5489 /* ExampleMacOSApp.entitlements */,
+				9DAB9E58228CA9FF00CE5489 /* Bluetooth-Mac.entitlements */,
 				9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */,
 				9D6031AF228DABC1005DDFC7 /* BLEViewController.swift */,
 			);
-			path = ExampleMacOSApp;
+			path = "Bluetooth-Mac";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +126,9 @@
 			productReference = 9D6037CA228CF52A0080E11E /* BluetoothPOC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DAB9E4A228CA9FD00CE5489 /* ExampleMacOSApp */ = {
+		9DAB9E4A228CA9FD00CE5489 /* Bluetooth-Mac-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DAB9E5B228CA9FF00CE5489 /* Build configuration list for PBXNativeTarget "ExampleMacOSApp" */;
+			buildConfigurationList = 9DAB9E5B228CA9FF00CE5489 /* Build configuration list for PBXNativeTarget "Bluetooth-Mac-iOS" */;
 			buildPhases = (
 				9DAB9E47228CA9FD00CE5489 /* Sources */,
 				9DAB9E48228CA9FD00CE5489 /* Frameworks */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = ExampleMacOSApp;
+			name = "Bluetooth-Mac-iOS";
 			productName = ExampleMacOSApp;
-			productReference = 9DAB9E4B228CA9FD00CE5489 /* ExampleMacOSApp.app */;
+			productReference = 9DAB9E4B228CA9FD00CE5489 /* Bluetooth-Mac-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9DAB9E46228CA9FD00CE5489 /* Build configuration list for PBXProject "ExampleMacOSApp" */;
+			buildConfigurationList = 9DAB9E46228CA9FD00CE5489 /* Build configuration list for PBXProject "Bluetooth-Mac-iOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DAB9E4A228CA9FD00CE5489 /* ExampleMacOSApp */,
+				9DAB9E4A228CA9FD00CE5489 /* Bluetooth-Mac-iOS */,
 				9D6037C9228CF52A0080E11E /* BluetoothPOC */,
 			);
 		};
@@ -266,7 +266,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DX8DKZ28ZG;
-				INFOPLIST_FILE = BluetoothPOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluetooth-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,7 +287,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DX8DKZ28ZG;
-				INFOPLIST_FILE = BluetoothPOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluetooth-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,16 +421,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ExampleMacOSApp/ExampleMacOSApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Bluetooth-Mac/Bluetooth-Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DX8DKZ28ZG;
-				INFOPLIST_FILE = ExampleMacOSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluetooth-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = WeMake.ExampleMacOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "WeMake.Bluetooth-Mac-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -440,16 +440,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ExampleMacOSApp/ExampleMacOSApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Bluetooth-Mac/Bluetooth-Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DX8DKZ28ZG;
-				INFOPLIST_FILE = ExampleMacOSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluetooth-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = WeMake.ExampleMacOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "WeMake.Bluetooth-Mac-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DAB9E46228CA9FD00CE5489 /* Build configuration list for PBXProject "ExampleMacOSApp" */ = {
+		9DAB9E46228CA9FD00CE5489 /* Build configuration list for PBXProject "Bluetooth-Mac-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DAB9E59228CA9FF00CE5489 /* Debug */,
@@ -476,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DAB9E5B228CA9FF00CE5489 /* Build configuration list for PBXNativeTarget "ExampleMacOSApp" */ = {
+		9DAB9E5B228CA9FF00CE5489 /* Build configuration list for PBXNativeTarget "Bluetooth-Mac-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DAB9E5C228CA9FF00CE5489 /* Debug */,
