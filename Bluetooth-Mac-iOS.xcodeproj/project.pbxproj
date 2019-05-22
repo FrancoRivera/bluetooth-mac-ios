@@ -14,12 +14,63 @@
 		9D6037D5228CF52A0080E11E /* BluetoothPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */; };
 		9D6037D7228CF52C0080E11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6037D6228CF52C0080E11E /* Assets.xcassets */; };
 		9D6037DA228CF52C0080E11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6037D8228CF52C0080E11E /* LaunchScreen.storyboard */; };
+		9D8754B12293833900ADEAE0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8754AF2293833900ADEAE0 /* Interface.storyboard */; };
+		9D8754B32293833A00ADEAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8754B22293833A00ADEAE0 /* Assets.xcassets */; };
+		9D8754BA2293833A00ADEAE0 /* Bluetooth-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D8754B92293833A00ADEAE0 /* Bluetooth-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D8754BF2293833A00ADEAE0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8754BE2293833A00ADEAE0 /* InterfaceController.swift */; };
+		9D8754C12293833A00ADEAE0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8754C02293833A00ADEAE0 /* ExtensionDelegate.swift */; };
+		9D8754C32293833A00ADEAE0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8754C22293833A00ADEAE0 /* NotificationController.swift */; };
+		9D8754C52293833A00ADEAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8754C42293833A00ADEAE0 /* Assets.xcassets */; };
+		9D8754CA2293833A00ADEAE0 /* Bluetooth-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D8754AD2293833900ADEAE0 /* Bluetooth-watch.app */; };
 		9DAB9E4F228CA9FD00CE5489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */; };
 		9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E50228CA9FD00CE5489 /* ViewController.swift */; };
 		9DAB9E53228CA9FF00CE5489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB9E52228CA9FF00CE5489 /* Assets.xcassets */; };
 		9DAB9E56228CA9FF00CE5489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAB9E54228CA9FF00CE5489 /* Main.storyboard */; };
 		9DAB9E5F228CB7C400CE5489 /* BluetoothDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */; };
+		9DDEE5EB228F6E2300FC3EBD /* BetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEE5EA228F6E2300FC3EBD /* BetterButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D8754BB2293833A00ADEAE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DAB9E43228CA9FD00CE5489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8754B82293833A00ADEAE0;
+			remoteInfo = "Bluetooth-watch Extension";
+		};
+		9D8754C82293833A00ADEAE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DAB9E43228CA9FD00CE5489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8754AC2293833900ADEAE0;
+			remoteInfo = "Bluetooth-watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D8754D02293833A00ADEAE0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D8754BA2293833A00ADEAE0 /* Bluetooth-watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8754D22293833A00ADEAE0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9D8754CA2293833A00ADEAE0 /* Bluetooth-watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D6031AF228DABC1005DDFC7 /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +82,17 @@
 		9D6037D6228CF52C0080E11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6037D9228CF52C0080E11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6037DB228CF52C0080E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8754AD2293833900ADEAE0 /* Bluetooth-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8754B02293833900ADEAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9D8754B22293833A00ADEAE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D8754B42293833A00ADEAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8754B92293833A00ADEAE0 /* Bluetooth-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bluetooth-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8754BE2293833A00ADEAE0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9D8754C02293833A00ADEAE0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9D8754C22293833A00ADEAE0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9D8754C42293833A00ADEAE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D8754C62293833A00ADEAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8754C72293833A00ADEAE0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		9DAB9E4B228CA9FD00CE5489 /* Bluetooth-Mac-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth-Mac-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAB9E4E228CA9FD00CE5489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DAB9E50228CA9FD00CE5489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +101,18 @@
 		9DAB9E57228CA9FF00CE5489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAB9E58228CA9FF00CE5489 /* Bluetooth-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bluetooth-Mac.entitlements"; sourceTree = "<group>"; };
 		9DAB9E5E228CB7C400CE5489 /* BluetoothDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevices.swift; sourceTree = "<group>"; };
+		9DDEE5EA228F6E2300FC3EBD /* BetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D6037C7228CF52A0080E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8754B62293833A00ADEAE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,9 +138,33 @@
 				9D6037D6228CF52C0080E11E /* Assets.xcassets */,
 				9D6037D8228CF52C0080E11E /* LaunchScreen.storyboard */,
 				9D6037DB228CF52C0080E11E /* Info.plist */,
+				9DDEE5EA228F6E2300FC3EBD /* BetterButton.swift */,
 				9D6037D3228CF52A0080E11E /* BluetoothPOC.xcdatamodeld */,
 			);
 			path = "Bluetooth-iOS";
+			sourceTree = "<group>";
+		};
+		9D8754AE2293833900ADEAE0 /* Bluetooth-watch */ = {
+			isa = PBXGroup;
+			children = (
+				9D8754AF2293833900ADEAE0 /* Interface.storyboard */,
+				9D8754B22293833A00ADEAE0 /* Assets.xcassets */,
+				9D8754B42293833A00ADEAE0 /* Info.plist */,
+			);
+			path = "Bluetooth-watch";
+			sourceTree = "<group>";
+		};
+		9D8754BD2293833A00ADEAE0 /* Bluetooth-watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D8754BE2293833A00ADEAE0 /* InterfaceController.swift */,
+				9D8754C02293833A00ADEAE0 /* ExtensionDelegate.swift */,
+				9D8754C22293833A00ADEAE0 /* NotificationController.swift */,
+				9D8754C42293833A00ADEAE0 /* Assets.xcassets */,
+				9D8754C62293833A00ADEAE0 /* Info.plist */,
+				9D8754C72293833A00ADEAE0 /* PushNotificationPayload.apns */,
+			);
+			path = "Bluetooth-watch Extension";
 			sourceTree = "<group>";
 		};
 		9DAB9E42228CA9FD00CE5489 = {
@@ -78,6 +172,8 @@
 			children = (
 				9DAB9E4D228CA9FD00CE5489 /* Bluetooth-Mac */,
 				9D6037CB228CF52A0080E11E /* Bluetooth-iOS */,
+				9D8754AE2293833900ADEAE0 /* Bluetooth-watch */,
+				9D8754BD2293833A00ADEAE0 /* Bluetooth-watch Extension */,
 				9DAB9E4C228CA9FD00CE5489 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +183,8 @@
 			children = (
 				9DAB9E4B228CA9FD00CE5489 /* Bluetooth-Mac-iOS.app */,
 				9D6037CA228CF52A0080E11E /* BluetoothPOC.app */,
+				9D8754AD2293833900ADEAE0 /* Bluetooth-watch.app */,
+				9D8754B92293833A00ADEAE0 /* Bluetooth-watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +214,51 @@
 				9D6037C6228CF52A0080E11E /* Sources */,
 				9D6037C7228CF52A0080E11E /* Frameworks */,
 				9D6037C8228CF52A0080E11E /* Resources */,
+				9D8754D22293833A00ADEAE0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D8754C92293833A00ADEAE0 /* PBXTargetDependency */,
 			);
 			name = BluetoothPOC;
 			productName = BluetoothPOC;
 			productReference = 9D6037CA228CF52A0080E11E /* BluetoothPOC.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9D8754AC2293833900ADEAE0 /* Bluetooth-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D8754D12293833A00ADEAE0 /* Build configuration list for PBXNativeTarget "Bluetooth-watch" */;
+			buildPhases = (
+				9D8754AB2293833900ADEAE0 /* Resources */,
+				9D8754D02293833A00ADEAE0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D8754BC2293833A00ADEAE0 /* PBXTargetDependency */,
+			);
+			name = "Bluetooth-watch";
+			productName = "Bluetooth-watch";
+			productReference = 9D8754AD2293833900ADEAE0 /* Bluetooth-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9D8754B82293833A00ADEAE0 /* Bluetooth-watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D8754CF2293833A00ADEAE0 /* Build configuration list for PBXNativeTarget "Bluetooth-watch Extension" */;
+			buildPhases = (
+				9D8754B52293833A00ADEAE0 /* Sources */,
+				9D8754B62293833A00ADEAE0 /* Frameworks */,
+				9D8754B72293833A00ADEAE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bluetooth-watch Extension";
+			productName = "Bluetooth-watch Extension";
+			productReference = 9D8754B92293833A00ADEAE0 /* Bluetooth-watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		9DAB9E4A228CA9FD00CE5489 /* Bluetooth-Mac-iOS */ = {
 			isa = PBXNativeTarget;
@@ -156,6 +290,12 @@
 					9D6037C9228CF52A0080E11E = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					9D8754AC2293833900ADEAE0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9D8754B82293833A00ADEAE0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					9DAB9E4A228CA9FD00CE5489 = {
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
@@ -181,6 +321,8 @@
 			targets = (
 				9DAB9E4A228CA9FD00CE5489 /* Bluetooth-Mac-iOS */,
 				9D6037C9228CF52A0080E11E /* BluetoothPOC */,
+				9D8754AC2293833900ADEAE0 /* Bluetooth-watch */,
+				9D8754B82293833A00ADEAE0 /* Bluetooth-watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +335,23 @@
 				9D6037DA228CF52C0080E11E /* LaunchScreen.storyboard in Resources */,
 				9D6037D7228CF52C0080E11E /* Assets.xcassets in Resources */,
 				9D6037D2228CF52A0080E11E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8754AB2293833900ADEAE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8754B32293833A00ADEAE0 /* Assets.xcassets in Resources */,
+				9D8754B12293833900ADEAE0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8754B72293833A00ADEAE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8754C52293833A00ADEAE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,18 +377,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D8754B52293833A00ADEAE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8754C32293833A00ADEAE0 /* NotificationController.swift in Sources */,
+				9D8754C12293833A00ADEAE0 /* ExtensionDelegate.swift in Sources */,
+				9D8754BF2293833A00ADEAE0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DAB9E47228CA9FD00CE5489 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9D6031B0228DABC1005DDFC7 /* BLEViewController.swift in Sources */,
 				9DAB9E51228CA9FD00CE5489 /* ViewController.swift in Sources */,
+				9DDEE5EB228F6E2300FC3EBD /* BetterButton.swift in Sources */,
 				9DAB9E4F228CA9FD00CE5489 /* AppDelegate.swift in Sources */,
 				9DAB9E5F228CB7C400CE5489 /* BluetoothDevices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D8754BC2293833A00ADEAE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8754B82293833A00ADEAE0 /* Bluetooth-watch Extension */;
+			targetProxy = 9D8754BB2293833A00ADEAE0 /* PBXContainerItemProxy */;
+		};
+		9D8754C92293833A00ADEAE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8754AC2293833900ADEAE0 /* Bluetooth-watch */;
+			targetProxy = 9D8754C82293833A00ADEAE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D6037D0228CF52A0080E11E /* Main.storyboard */ = {
@@ -246,6 +429,14 @@
 				9D6037D9228CF52C0080E11E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D8754AF2293833900ADEAE0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D8754B02293833900ADEAE0 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		9DAB9E54228CA9FF00CE5489 /* Main.storyboard */ = {
@@ -274,6 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,10 +487,101 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D8754CB2293833A00ADEAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				IBSC_MODULE = Bluetooth_watch_Extension;
+				INFOPLIST_FILE = "Bluetooth-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		9D8754CC2293833A00ADEAE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				IBSC_MODULE = Bluetooth_watch_Extension;
+				INFOPLIST_FILE = "Bluetooth-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		9D8754CD2293833A00ADEAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				INFOPLIST_FILE = "Bluetooth-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		9D8754CE2293833A00ADEAE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX8DKZ28ZG;
+				INFOPLIST_FILE = "Bluetooth-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeMake.BluetoothPOC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Release;
 		};
@@ -463,6 +746,24 @@
 			buildConfigurations = (
 				9D6037DD228CF52C0080E11E /* Debug */,
 				9D6037DE228CF52C0080E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D8754CF2293833A00ADEAE0 /* Build configuration list for PBXNativeTarget "Bluetooth-watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8754CD2293833A00ADEAE0 /* Debug */,
+				9D8754CE2293833A00ADEAE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D8754D12293833A00ADEAE0 /* Build configuration list for PBXNativeTarget "Bluetooth-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D8754CB2293833A00ADEAE0 /* Debug */,
+				9D8754CC2293833A00ADEAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
